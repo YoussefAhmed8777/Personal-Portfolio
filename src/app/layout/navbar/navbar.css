@@ -1,0 +1,24 @@
+.nav-links ul li a {
+  position: relative;
+}
+
+.bg-burgandy {
+  background-color: #800020;
+}
+
+.nav-links ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background-color: #09c;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.nav-links ul li a:hover::before {
+  width: 100%;
+}

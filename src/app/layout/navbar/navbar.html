@@ -1,0 +1,81 @@
+<nav>
+  <div class="container bg-burgandy text-white flex justify-between md:justify-evenly items-center mx-auto p-3">
+    <div class="logo p-1 rounded-md">
+      <button class="cursor-pointer">
+        <a class="font-bold"> JOE'Studio </a>
+      </button>
+    </div>
+    <div class="nav-links hidden md:flex rounded-md p-1">
+      <ul class="flex gap-x-4">
+        <li class="cursor-pointer">
+          <a> Home </a>
+        </li>
+        <li class="cursor-pointer">
+          <a> About </a>
+        </li>
+        <li class="cursor-pointer">
+          <a> Education & Courses </a>
+        </li>
+        <li class="cursor-pointer">
+          <a> Technology & Skills </a>
+        </li>
+        <li class="cursor-pointer">
+          <a> Projects </a>
+        </li>
+        <li class="cursor-pointer">
+          <a> Contact </a>
+        </li>
+      </ul>
+    </div>
+    <div class="documents hidden md:flex space-x-5 rounded-md p-1 text-black">
+      <button class="bg-amber-50 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+        <a> View Portfolio </a>
+      </button>
+      <button class="bg-amber-100 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+        <a> View CV </a>
+      </button>
+    </div>
+    <div class="mobile-menu md:hidden">
+      <button class="cursor-pointer" (click)="toggleMenu()">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+
+      <div id="content" class="absolute  left-0 right-0 shadow-lg hidden z-10">
+        <div class="container mx-auto flex flex-col gap-y-2 bg-blue-700">
+          <div class="nav-links rounded-md p-1 ">
+            <ul class="flex flex-col gap-4">
+              <li class="cursor-pointer">
+                <a> Home </a>
+              </li>
+              <li class="cursor-pointer">
+                <a> About </a>
+              </li>
+              <li class="cursor-pointer">
+                <a> Education & Courses </a>
+              </li>
+              <li class="cursor-pointer">
+                <a> Technology & Skills </a>
+              </li>
+              <li class="cursor-pointer">
+                <a> Projects </a>
+              </li>
+              <li class="cursor-pointer">
+                <a> Contact </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="documents flex flex-col gap-1 rounded-md p-1 w-full">
+            <button class="bg-amber-50 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+              <a> View Portfolio </a>
+            </button>
+
+            <button class="bg-amber-100 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+              <a> View CV </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
