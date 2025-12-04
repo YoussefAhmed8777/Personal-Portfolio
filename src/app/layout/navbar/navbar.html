@@ -1,19 +1,19 @@
-<nav>
-  <div class="container bg-burgandy text-white flex justify-between md:justify-evenly items-center mx-auto p-3">
+<nav class="fixed w-full top-0 bg-gray-500 shadow-lg">
+  <div class="container text-white flex justify-between md:justify-evenly items-center mx-auto p-3">
     <div class="logo p-1 rounded-md">
       <button class="cursor-pointer">
-        <a class="font-bold"> JOE'Studio </a>
+        <a class="font-bold" routerLink="home"> JOE'Studio </a>
       </button>
     </div>
     <div class="nav-links hidden md:flex rounded-md p-1">
       <ul class="flex gap-x-4">
-        <li class="cursor-pointer">
+        <li class="cursor-pointer" routerLink="home">
           <a> Home </a>
         </li>
-        <li class="cursor-pointer">
+        <li class="cursor-pointer" routerLink="about">
           <a> About </a>
         </li>
-        <li class="cursor-pointer">
+        <li class="cursor-pointer" routerLink="educationandcourses">
           <a> Education & Courses </a>
         </li>
         <li class="cursor-pointer">
@@ -42,13 +42,13 @@
       </button>
 
       <div id="content" class="absolute top-14 left-0 right-0 shadow-lg hidden z-10">
-        <div class="container mx-auto flex flex-col p-4 gap-y-2 bg-blue-700">
+        <div class="container mx-auto flex flex-col p-4 gap-y-2 bg-blue-700 rounded-b-lg">
           <div class="nav-links rounded-md p-1">
             <ul class="flex flex-col gap-4">
-              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white" routerLink="home">
                 <a> Home </a>
               </li>
-              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white" routerLink="about">
                 <a> About </a>
               </li>
               <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
