@@ -28,49 +28,50 @@
       </ul>
     </div>
     <div class="documents hidden md:flex space-x-5 rounded-md p-1 text-black">
-      <button class="bg-amber-50 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+      <button class="bg-amber-50 p-3 rounded-md hover:bg-amber-200 cursor-pointer">
         <a> View Portfolio </a>
       </button>
-      <button class="bg-amber-100 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+      <button class="bg-amber-100 p-3 rounded-md hover:bg-amber-200 cursor-pointer">
         <a> View CV </a>
       </button>
     </div>
+
     <div class="mobile-menu md:hidden">
       <button class="cursor-pointer" (click)="toggleMenu()">
-        <i class="fa-solid fa-bars text-xl"></i>
+        <i id="menuBtnIcon" class="fa-solid fa-bars text-xl"></i>
       </button>
 
-      <div id="content" class="absolute  left-0 right-0 shadow-lg hidden z-10">
-        <div class="container mx-auto flex flex-col gap-y-2 bg-blue-700">
-          <div class="nav-links rounded-md p-1 ">
+      <div id="content" class="absolute left-0 right-0 shadow-lg hidden z-10">
+        <div class="container mx-auto flex flex-col p-4 gap-y-2 bg-blue-700">
+          <div class="nav-links rounded-md p-1">
             <ul class="flex flex-col gap-4">
-              <li class="cursor-pointer">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
                 <a> Home </a>
               </li>
-              <li class="cursor-pointer">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
                 <a> About </a>
               </li>
-              <li class="cursor-pointer">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
                 <a> Education & Courses </a>
               </li>
-              <li class="cursor-pointer">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
                 <a> Technology & Skills </a>
               </li>
-              <li class="cursor-pointer">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
                 <a> Projects </a>
               </li>
-              <li class="cursor-pointer">
+              <li class="cursor-pointer hover:border-l transition duration-1000 ps-1 border-white">
                 <a> Contact </a>
               </li>
             </ul>
           </div>
 
-          <div class="documents flex flex-col gap-1 rounded-md p-1 w-full">
-            <button class="bg-amber-50 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+          <div class="documents flex flex-col gap-1 rounded-md p-1 w-full text-black">
+            <button class="bg-amber-50 p-3 rounded-md hover:bg-amber-200 cursor-pointer">
               <a> View Portfolio </a>
             </button>
 
-            <button class="bg-amber-100 py-0.5 px-1 rounded-md hover:bg-amber-200 cursor-pointer">
+            <button class="bg-amber-100 p-3 rounded-md hover:bg-amber-200 cursor-pointer">
               <a> View CV </a>
             </button>
           </div>
